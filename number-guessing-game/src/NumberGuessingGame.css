@@ -1,0 +1,43 @@
+/* src/components/NumberGuessingGame.css */
+.number-guessing-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .number-guessing-game h1 {
+    color: #333;
+  }
+  
+  .number-guessing-game form {
+    margin-bottom: 20px;
+  }
+  
+  .number-guessing-game input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .number-guessing-game button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .number-guessing-game button:hover {
+    background-color: #218838;
+  }
+  
+  .number-guessing-game p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  

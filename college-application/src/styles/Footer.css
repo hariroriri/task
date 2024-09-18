@@ -1,0 +1,43 @@
+/* Ensures that the footer is always at the bottom of the page or viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the root takes at least full viewport height */
+}
+
+.main-content {
+  flex: 1; /* Allows the content to take up remaining space */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative; /* Adjust this if you need to position it differently */
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better separation */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin for a cleaner look */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+}

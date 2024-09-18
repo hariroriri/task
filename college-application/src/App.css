@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh; /* Ensure root takes at least full viewport height */
+}
+
+.main-content {
+  padding-bottom: 80px; /* Ensure padding for the footer */
+}

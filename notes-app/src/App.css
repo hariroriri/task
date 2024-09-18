@@ -1,0 +1,154 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff6f61;
+  margin-bottom: 20px;
+  font-weight: 700; /* More emphasis on heading */
+}
+
+form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+input, textarea {
+  display: block;
+  width: 90%;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e55b50;
+  transform: scale(1.05);
+}
+
+.note-list {
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.note:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.note h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.note p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.note-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.note-buttons button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.note-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.note-buttons .delete-button {
+  background-color: #dc3545;
+}
+
+.note-buttons .delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .note {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input, textarea {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .note h2 {
+    font-size: 1.5em;
+  }
+
+  .note p {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,56 @@
+.breadcrumb-nav {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.breadcrumb-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-nav li {
+  margin-right: 15px; /* Increased spacing between items */
+  font-size: 1.2rem; /* Larger font size for better readability */
+  font-weight: 500; /* Slightly bold font */
+}
+
+.breadcrumb-nav li a {
+  color: #007bff; /* Primary color */
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.breadcrumb-nav li a:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.breadcrumb-nav li:not(:last-child)::after {
+  content: '/'; /* Separator between breadcrumb items */
+  margin-left: 15px; /* Space between breadcrumb items and separator */
+  color: #aaa; /* Light color for separator */
+}
+
+.breadcrumb-nav li span {
+  color: #555; /* Color for the active breadcrumb */
+  font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-nav {
+    padding: 10px; /* Adjust padding on smaller screens */
+  }
+
+  .breadcrumb-nav li {
+    font-size: 1rem; /* Slightly smaller font size */
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  .breadcrumb-nav li::after {
+    content: '>'; /* Different separator for smaller screens */
+    margin-left: 10px;
+  }
+}

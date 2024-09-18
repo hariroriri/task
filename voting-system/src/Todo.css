@@ -1,0 +1,100 @@
+/* Background styling for the to-do list */
+.todo-list-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading style */
+  .todo-list-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and button for adding tasks */
+  .task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+  }
+  
+  .task-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .task-input button:hover {
+    background-color: #45a049;
+  }
+  
+  /* List of tasks */
+  .tasks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tasks li {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task styling */
+  .tasks li span {
+    flex: 1;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  /* Completed task styling */
+  .completed-task span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* Delete button styling */
+  .delete-task {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete-task:hover {
+    background-color: #e0554c;
+  }
+  
+  /* No tasks message */
+  .no-tasks {
+    font-size: 1.2em;
+    color: #999;
+    margin-top: 20px;
+  }
+  

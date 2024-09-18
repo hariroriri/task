@@ -1,0 +1,10 @@
+/* src/App.css */
+
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  margin-top: 60px; /* Adjust based on the height of your navbar */
+  padding: 20px;
+}

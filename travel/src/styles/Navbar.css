@@ -1,0 +1,124 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a, #000000); /* Black gradient */
+    padding: 15px 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .logo a:hover {
+    color: #ff6b6b; /* Accent color (soft gold) */
+  }
+  
+  /* Links Styling */
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+    color: white;
+  }
+  
+  .nav-links a:focus {
+    outline: 2px solid #ff6b6b; /* Gold focus effect */
+    border-radius: 30px;
+  }
+  
+  /* Book Now Button */
+  .book-now-btn {
+    background-color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #ff5252;
+  }
+  
+  /* Mobile Menu Styling */
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #1a1a1a, #000000); /* Consistent black gradient */
+      z-index: 1;
+      padding: 20px 0;
+      gap: 20px;
+      text-align: center;
+      animation: slideDown 0.3s ease forwards;
+    }
+  
+    .nav-links-mobile a {
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  
+    /* Slide-down animation for mobile menu */
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  

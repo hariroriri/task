@@ -1,0 +1,75 @@
+/* src/components/SearchSuggestion.css */
+
+.search-suggestion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  .search-suggestion h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #007bff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .search-suggestion input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .suggestion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .suggestion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pokemon-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pokemon-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

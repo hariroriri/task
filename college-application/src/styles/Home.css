@@ -1,0 +1,123 @@
+/* src/styles/Home.css */
+
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  height: 60vh; /* Responsive height */
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.welcome-message {
+  padding: 40px; /* Increased padding for a more spacious feel */
+  background: #ffffff; /* White background */
+  margin: 20px auto; /* Margin for spacing from other sections */
+  max-width: 1200px; /* Constrain width */
+  border-radius: 12px; /* Slightly larger radius for rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+.welcome-message:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.college-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners */
+  margin-top: 30px; /* Increased margin for better spacing */
+}
+
+.recent-news, .upcoming-events, .testimonials {
+  text-align: left;
+  margin: 20px auto; /* Center alignment with auto margins */
+  padding: 30px; /* Increased padding for content spacing */
+  background: #ffffff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  max-width: 1200px; /* Constrain width */
+}
+
+.recent-news h2, .upcoming-events h2, .testimonials h2 {
+  font-size: 2.5rem; /* Larger font size for headings */
+  margin-bottom: 20px; /* More space below the heading */
+  color: #333; /* Dark text */
+}
+
+.recent-news ul, .upcoming-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-news li, .upcoming-events li {
+  margin-bottom: 20px; /* Increased spacing between items */
+  font-size: 1.1rem; /* Slightly larger text for readability */
+  line-height: 1.8; /* Better readability */
+}
+
+.recent-news a, .upcoming-events a {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+  font-weight: bold; /* Emphasize links */
+}
+
+.recent-news a:hover, .upcoming-events a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.testimonials blockquote {
+  border-left: 6px solid #007bff; /* Thicker blue border */
+  padding-left: 20px;
+  margin: 20px 0; /* Increased margin for spacing */
+  font-style: italic;
+  color: #555;
+  background: #f9f9f9; /* Light background for quotes */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* More padding for quotes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.testimonials footer {
+  text-align: right;
+  font-size: 1rem; /* Adjust font size */
+  color: #777; /* Light color for author names */
+}
+
+@media (max-width: 768px) {
+  .welcome-message {
+    padding: 20px;
+    max-width: 100%;
+    margin: 10px auto; /* Reduce margin for smaller screens */
+  }
+
+  .recent-news, .upcoming-events, .testimonials {
+    padding: 20px;
+    margin: 10px auto; /* Reduce margin for smaller screens */
+  }
+
+  .recent-news li, .upcoming-events li {
+    font-size: 1rem; /* Slightly smaller text on smaller screens */
+  }
+
+  .testimonials blockquote {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

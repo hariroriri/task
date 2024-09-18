@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #A3D8FF; 
+  --secondary-color: #D3D3D3; /* Light Gray */
+  --accent-color: #FF6F61; /* Coral */
+  --text-color: #333333; /* Charcoal */
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 0; /* Increased padding for better height */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better separation */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.8rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 25px; /* Increased margin for better spacing */
+}
+
+.nav-item a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}

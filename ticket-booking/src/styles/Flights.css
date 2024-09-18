@@ -1,0 +1,95 @@
+/* Flights.css */
+
+.flights {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background-color: #f7f9fc;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .search-flights {
+    margin-bottom: 30px;
+  }
+  
+  .flight-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-btn:hover {
+    background-color: #e55b50;
+  }
+  
+  .flights-results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .flight-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .flight-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .flight-card p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .flight-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

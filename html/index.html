@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid with Awesome UI Features</title>
+  <style>
+    /* Grid Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .grid-item {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    /* Fixed Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    /* Loading Spinner */
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: #333;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      display: none;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Dynamic Tabs */
+    .tabs {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Expandable Search Bar */
+    .search-bar {
+      width: 200px;
+      height: 40px;
+      transition: width 0.4s ease-in-out;
+    }
+    .search-bar:focus {
+      width: 400px;
+    }
+
+    /* Collapsible Sections */
+    .collapsible {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      padding: 10px;
+      text-align: left;
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+    .content {
+      padding: 0 10px;
+      display: none;
+      overflow: hidden;
+    }
+
+    /* Breadcrumb Navigation */
+    .breadcrumb {
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .breadcrumb a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    .breadcrumb a::after {
+      content: ' > ';
+    }
+
+    /* Responsive Video Embed */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Custom Checkbox & Radio */
+    .custom-checkbox input[type="checkbox"], .custom-radio input[type="radio"] {
+      display: none;
+    }
+    .custom-checkbox label, .custom-radio label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 25px;
+    }
+    .custom-checkbox label::before, .custom-radio label::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb">
+    <a href="#">Home</a>
+    <a href="#">Section</a>
+    <a href="#">Subsection</a>
+  </nav>
+
+  <!-- Search Bar -->
+  <div>
+    <input type="text" class="search-bar" placeholder="Search...">
+  </div>
+
+  <!-- Grid Layout -->
+  <div class="grid-container" id="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>
+
+  <!-- Loading Spinner for Infinite Scroll -->
+  <div class="spinner" id="spinner"></div>
+
+  <!-- Dynamic Tabs -->
+  <div class="tabs">
+    <div onclick="openTab(event, 'tab1')">Overview</div>
+    <div onclick="openTab(event, 'tab2')">Gallery</div>
+    <div onclick="openTab(event, 'tab3')">Reviews</div>
+  </div>
+
+  <div id="tab1" class="tab-content">Content for Overview</div>
+  <div id="tab2" class="tab-content">Content for Gallery</div>
+  <div id="tab3" class="tab-content">Content for Reviews</div>
+
+  <!-- Collapsible Section -->
+  <button class="collapsible">Collapsible Section</button>
+  <div class="content">
+    <p>Hidden content goes here...</p>
+  </div>
+
+  <!-- Responsive Video Embed -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- Custom Checkbox -->
+  <div class="custom-checkbox">
+    <input type="checkbox" id="custom-checkbox-1">
+    <label for="custom-checkbox-1">Custom Checkbox</label>
+  </div>
+
+  <!-- Custom Radio -->
+  <div class="custom-radio">
+    <input type="radio" id="custom-radio-1" name="radio">
+    <label for="custom-radio-1">Custom Radio</label>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Fixed Footer Content</p>
+  </footer>
+
+  <script>
+    // Tabs functionality
+    function openTab(evt, tabName) {
+      const tabs = document.getElementsByClassName("tab-content");
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+      }
+      document.getElementById(tabName).classList.add('active');
+    }
+
+    // Collapsible Section
+    const collapsible = document.querySelectorAll('.collapsible');
+    collapsible.forEach((item) => {
+      item.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+
+    // Infinite Scroll functionality
+    window.addEventListener('scroll', () => {
+      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      if (scrollTop + clientHeight >= scrollHeight - 5) {
+        loadMoreContent();
+      }
+    });
+
+    function loadMoreContent() {
+      const spinner = document.getElementById('spinner');
+      spinner.style.display = 'block';
+      setTimeout(() => {
+        const gridContainer = document.getElementById('grid-container');
+        for (let i = 0; i < 3; i++) {
+          const newItem = document.createElement('div');
+          newItem.classList.add('grid-item');
+          newItem.textContent = `New Item ${gridContainer.children.length + 1}`;
+          gridContainer.appendChild(newItem);
+        }
+        spinner.style.display = 'none';
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>

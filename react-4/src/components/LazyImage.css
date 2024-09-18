@@ -1,0 +1,17 @@
+/* src/components/LazyImage.css */
+
+.lazy-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .lazy-image[loading="lazy"] {
+    opacity: 0;
+  }
+  
+  .lazy-image.loaded {
+    opacity: 1;
+  }
+  

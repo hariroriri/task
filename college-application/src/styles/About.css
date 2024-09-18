@@ -1,0 +1,89 @@
+/* src/styles/About.css */
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for a modern look */
+}
+
+.about-text {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+  max-width: 1000px; /* Constrain maximum width */
+  margin: 0 auto; /* Center the content */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mission, .team, .history {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1000px; /* Constrain maximum width */
+}
+
+.mission-content, .team-content, .history-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mission-image, .team-image, .history-image {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger font size for main headings */
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller for sub-headings */
+}
+
+p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 20px;
+  }
+  
+  .mission-content, .team-content, .history-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-image, .team-image, .history-image {
+    width: 100%;
+    margin-bottom: 20px; /* Add margin for spacing between image and text */
+  }
+}

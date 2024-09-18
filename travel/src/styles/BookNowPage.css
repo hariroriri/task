@@ -1,0 +1,159 @@
+/* src/styles/BookNowPage.css */
+
+.book-now-page {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .intro-section h1 {
+    font-size: 3.5em;
+    color: #ff6f61; /* Accent color for the heading */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .intro-section p {
+    font-size: 1.25em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .travel-packages-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .travel-packages-section h2 {
+    font-size: 2.5em;
+    color: #ff6f61; /* Accent color for section headings */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .travel-packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .travel-package-item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Adjust for spacing */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .travel-package-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .travel-package-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensure image covers its container */
+  }
+  
+  .travel-package-item h3 {
+    font-size: 1.8em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  .travel-package-item p {
+    font-size: 1.15em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .travel-package-item {
+      width: calc(50% - 20px); /* Two items per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .travel-package-item {
+      width: 100%; /* Full width on small screens */
+    }
+  }
+  
+  .booking-form-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form-section h2 {
+    font-size: 2.5em;
+    color: #ff6f61; /* Accent color for section headings */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .booking-form-section .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .booking-form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .booking-form-section input, .booking-form-section select, .booking-form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .booking-form-section button {
+    padding: 15px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  
+  .booking-form-section button:hover {
+    background-color: #ff3d3d;
+  }
+  
+  @media (max-width: 768px) {
+    .travel-packages-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .travel-package-item {
+      flex: 1 1 auto;
+      max-width: 90%;
+    }
+  }
+  

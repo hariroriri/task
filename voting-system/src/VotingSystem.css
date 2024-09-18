@@ -1,0 +1,91 @@
+/* Background image with full cover */
+.voting-system-container {
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/2093958214/photo/indian-general-election-2024-or-lok-sabha-election.jpg?s=1024x1024&w=is&k=20&c=Ci7Xtx0blD6BXF_kGJq2cmzuNgH-nT2isLPKcUpFr6E=');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .voting-system {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for content */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .voting-system h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .age-verification input {
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+  }
+  
+  .age-verification button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .age-verification button:hover {
+    background-color: #e0554c;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .voting-section {
+    margin-top: 20px;
+  }
+  
+  .voting-section h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .vote-options label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  
+  .vote-options input {
+    margin-right: 10px;
+  }
+  
+  .voting-section button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .voting-section button:hover {
+    background-color: #45a049;
+  }
+  

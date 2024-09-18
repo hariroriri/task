@@ -1,0 +1,208 @@
+.home {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(70%);
+    position: absolute;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-buttons .btn {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .cta-buttons .btn:hover {
+    background-color: #ff3d3d;
+  }
+  
+  /* Popular Packages Section */
+/* Popular Packages Section */
+.packages {
+    padding: 80px 40px; /* Increased padding for more space */
+    text-align: center;
+    background-color: #f9f9f9; /* Added a light background for contrast */
+  }
+  
+  .packages h2 { 
+    font-size: 2.8rem; /* Slightly larger font for better readability */
+    margin-bottom: 50px; /* Increased margin for more space between title and cards */
+    color: #333;
+  }
+  
+  .package-grid {
+    display: grid; /* Use grid layout for better control over spacing */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive column layout */
+    gap: 30px; /* Increased gap between package cards */
+    max-width: 1200px; /* Restrict grid width for better alignment */
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  .package-card {
+    background-color: white;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for a more prominent look */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add shadow transition */
+    padding-bottom: 20px; /* Add padding for consistent spacing */
+  }
+  
+  .package-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+  }
+  
+  .package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .package-card h3 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+  }
+  
+  .package-card p {
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .package-card .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px; /* Increased padding for a more clickable button */
+    border: none;
+    border-radius: 30px; /* More rounded button */
+    margin-top: 15px; /* Add space above button */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .package-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    font-style: italic;
+  }
+  
+  .testimonial-card h4 {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  /* Newsletter Subscription Section */
+  .newsletter {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .newsletter-form .btn {
+    background-color: #ff5a5f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .newsletter-form .btn:hover {
+    background-color: #ff3d3d;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

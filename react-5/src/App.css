@@ -1,0 +1,75 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+h1 {
+  color: #007bff;
+}
+
+/* src/components/DataFetching.css */
+.data-fetching {
+  margin-top: 20px;
+}
+
+.data-fetching h2{
+  margin-top: 20px;
+}
+
+.fetch-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
+
+.spinner {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.data-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.data-item {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* src/components/NotificationToast.css */
+.toast-notification {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toast-notification p {
+  margin: 0;
+}

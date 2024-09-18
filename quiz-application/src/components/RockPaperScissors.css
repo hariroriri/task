@@ -1,0 +1,58 @@
+/* RockPaperScissors.css */
+.game-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .choice-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .choice-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .results {
+    margin-top: 30px;
+  }
+  
+  .results p {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .results span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .results h2 {
+    font-size: 2em;
+    color: #ff6f61;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,17 @@
+/* src/components/DataFetching.css */
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff1a1a;
+  }
+  

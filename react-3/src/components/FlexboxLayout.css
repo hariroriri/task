@@ -1,0 +1,38 @@
+/* FlexboxLayout.css */
+
+.flexbox-layout {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .flex-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .flex-item p {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

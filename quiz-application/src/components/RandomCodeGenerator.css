@@ -1,0 +1,71 @@
+/* RandomCodeGenerator.css */
+.random-code-generator {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .random-code-generator h1 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-section label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"] {
+    width: 80px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #ff6f61;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e55b50;
+  }
+  
+  .generated-code {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .generated-code span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
